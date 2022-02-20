@@ -1,29 +1,21 @@
 package com.apipothi.java8.lambdaexpression;
 
-public class LambdaExpressionExample {
+public class LambdaExpressionExample implements MyPlaylist{
 	
 	public static void main(String[] args) {
 		
-		String myPlaylist="JAVA 8";
-		//LambdaExpressionExample example=new LambdaExpressionExample();
-		//example.getPlaylistName(myPlaylist);
+		String mychennal="API POTHI";
+		int count=9;
+		LambdaExpressionExample example=new LambdaExpressionExample();
 		
-		MyPlaylist playlist= (String playlistname) -> {
-			System.out.println("API POTHI PLAY LIST NAME IS - "+playlistname);
-			return playlistname;
-	};
-	
-	
-	playlist.getPlaylistName(myPlaylist);
-	
-	 
+		example.getPlaylistCount(mychennal, count);
 	}
 
-	/*
-
 	@Override
-	public String getPlaylistName(String playlistname) {
-	System.out.println("API POTHI PLAY LIST NAME IS - "+playlistname);
-	return playlistname;
-    */
-	}	
+	public int getPlaylistCount(String chennalName, int Count) {
+		System.out.println("My Chennal Name is -"+chennalName+"Conatin "+Count+"number of playlist");
+		return Count;
+	}
+}
+		
+	

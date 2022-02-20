@@ -7,9 +7,9 @@ public interface MyPlaylist {
 	//public void greetings();
 	
 	/* Method with "one arguments", "void return type", "public access modifier" */
-	public String getPlaylistName(String playlistname);
+	//public String getPlaylistName(String playlistname);
 	
 	/* Method with "two arguments", "int return type", "public access modifier" */
-	//public int getPlaylistCount(String chennalName, int Count);
+	public int getPlaylistCount(String chennalName, int Count);
 
 }
